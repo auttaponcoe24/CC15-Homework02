@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        main {
+            height: 100vh;
+            width: 100%;
+        }
+        .card {
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            width: 200px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            /* box-shadow: 10px 10px 5px 0px rgba(224,208,208,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(224,208,208,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(224,208,208,0.75); */
+            transition: all 1s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.2);
+        }
+        .card img {
+            width: 100%;
+            border-bottom: 1px solid gainsboro;
+            /* margin: 0 auto; */
+        }
+        .card .notificate {
+            background-color: red;
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            right: -5px;
+            font-size: 1rem;
+            padding: 12px;
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all ease 1.5s;
+        }
+        .card .notificate:hover {
+            transform: scale(1.5);
+        }
+        .card .close {
+            position: absolute;
+            font-size: 2rem;
+            top: -10px;
+            color: gray;
+            cursor: pointer;
+        }
+        .card p {
+            text-align: center;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img src="./human-man-10.svg" alt="logo">
+            <p>Mr.Auttapon</p>
+            <div class="notificate">7</div>
+            <div class="close">&times;</div>
+        </div>
+    </main>
+</body>
+</html>
